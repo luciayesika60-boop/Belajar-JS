@@ -40,6 +40,40 @@
         }
         alert(jumlahDuaBilanngan(5, 10));
         alert(jumlahDuaBilanngan2(7, 3));
+
+        function VolumekeduaKubus(p, r) {
+            var volume1 = p * p * p;
+            var volume2 = r * r * r;
+
+            var total;
+            total = volume1 + volume2;
+            return total;
+        }
+        console.log(VolumekeduaKubus(3, 4));// (3,4) argument
+        //parameter(terdapat didalam kurung function)
+        //argumen(nilai yang diberikan keparameter saat fungsi dipanggil)
+        function tambah1(a, b) {
+            return a + b;
+        }
+        function kali(a, b) {
+            return a * b;
+        }
+        var a = parseInt(prompt("Masukkan angka pertama:"));
+        var b = parseInt(prompt("Masukkan angka kedua:"));
+        var hasil = tambah1(a, b);
+        console.log(hasil);
+        var hasilKali = kali(tambah1(1, 2), tambah1(3, 4));
+        console.log(hasilKali);
+        //arguments (nilai array yang tersedia didalam fungsi)
+        function tammbah() {
+            var hasil = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                hasil += arguments[i];
+            }
+            return hasil;
+        }
+        var coba = tammbah(1, 2, 3, 4);
+        console.log(coba);
     </script>
 
 </body>
