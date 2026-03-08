@@ -18,7 +18,9 @@
         document.write(x);
         // console
         alert("Selamat datang di website saya!");
+        //==========================================================================================================
         //function adalah kunci utama(method,class,module,constuctor)
+        //==========================================================================================================
         //Built-in function(String)
         var nama = "Putri Dewi";
         console.log(nama.charAt(2)); //mengambil karakter pada index ke-5
@@ -50,8 +52,10 @@
             return total;
         }
         console.log(VolumekeduaKubus(3, 4));// (3,4) argument
+        //===========================================================================================================
         //parameter(terdapat didalam kurung function)
         //argumen(nilai yang diberikan keparameter saat fungsi dipanggil)
+        //===========================================================================================================
         function tambah1(a, b) {
             return a + b;
         }
@@ -94,6 +98,26 @@
         }
         console.log(VolumekeduaKubus2(3, 4));
         //==========================================================================================================
+        //Scope(lingkup variabel)
+        //==========================================================================================================
+        //block scope
+        var i = 2;
+        //batas block scope
+        if (i % 2 == 0) {
+            var genap = true;
+        }
+        //batas block scope, tidak bisa dijalankan pada console
+        if (genap) {
+            console.log("angka genap");
+        }
+        //function scope
+        var a = 1;//global scope/window scope
+        function tes(a) {
+            // a=2//local scope 
+            console.log(a);
+        }
+        tes(2);//print local scope
+        console.log(a);//print global scope
     </script>
 
 </body>
