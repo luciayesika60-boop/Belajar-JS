@@ -135,6 +135,71 @@
             if (n === 0) return 1; {
                 return n * faktorial(n - 1);
             }
+        }
+        console.log(faktorial(5));
+        //==========================================================================================================
+        //Array (struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel)
+        //==========================================================================================================
+        var binatang = [];
+        binatang = ["kucing", "anjing", "kelinci"];
+        console.log(binatang[1]);
+
+        var myArr3 = ['teks', 2, false, 'myFunc', [4, 5, 6]];
+        console.log(myArr3[4][1])//ngambil nilai  5
+
+        //Menampilkan array  lenght
+        var arr = ["Mawar", "Melati", "Matahari"];
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        //Method pada array
+        var arr = ['Mawar', 'Melati', 'Matahari'];
+        console.log(arr.join(" - "));
+        //push & pop
+        arr.push('Doddy')//untuk menambahkan
+        console.log(arr.join('-'));
+        arr.pop();//menghapus array,klo pop satu2 klo push bisa sekaligus
+        console.log(arr.join('-'));
+
+        //unshift & shift
+        var arr1 = ['Mawar', 'Melati', 'Matahari'];
+        arr1.unshift('Putri');//menambahkan di awal array
+        console.log(arr1.join('-'));
+        arr1.shift();//
+        console.log(arr1.join('-'));
+
+        //slice & splice
+        //splice(indexAwal,mauDihapusBerapa,elemenBaru1,elemenBaru2,...)
+        var arr2 = ['Mawar', 'Melati', 'Matahari'];
+        arr2.splice(1, 0, 'Dewi');//menghapus 1 elemen pada index ke-1 dan menambahkan elemen baru "Dewi"
+        // slice(indexAwal,indexAkhir) array baru
+        var arr3 = ['Mawar', 'Melati', 'Matahari'];
+        var newArr = arr3.slice(0, 2);//mengambil elemen dari index ke-0 sampai index ke-1 (tidak termasuk index ke-2)
+        console.log(newArr.join('-'));
+
+        //foreach & map
+        var angka = [1, 2, 3, 4, 5];
+        var nama = ['Mawar', 'Melati', 'Matahari'];
+        nama.forEach(function (e, i) {
+            console.log('Mahasiswa ke-' + i + ' adalah ' + e);
+        });
+
+        //map digunakan untuk membuat array baru dengan memanggil fungsi pada setiap elemen array
+        var bilangan = [1, 2, 3, 4, 5];
+        var angka1 = bilangan.map(function (e) {
+            return e * 2;
+        });
+        console.log(angka1.join('-'));
+
+        //sort digunakan untuk mengurutkan elemen array
+        var bilangan2 = [2, 1, 6, 9, 4, 5, 3, 6];
+        console.log(bilangan2.join('-'));
+        bilangan2.sort();//ngurutin angka awalnya misal 10 setelah 1 karena  dia liat angka 1
+        angka2.sort(function (a, b) {
+            return a - b;//ngurutin angka dari kecil ke besar 
+        });
+        console.log(bilangan2.join('-'));
+
 
     </script>
 
