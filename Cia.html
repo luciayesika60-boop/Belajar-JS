@@ -74,6 +74,26 @@
         }
         var coba = tammbah(1, 2, 3, 4);
         console.log(coba);
+        //==========================================================================================================
+        //refactoring (mengubah kode yang sudah ada untuk meningkatkan kualitasnya tanpa mengubah fungsionalitasnya)
+        //==========================================================================================================
+        // awalnya
+
+        //function VolumekeduaKubus(p, r) {
+        //    var volume1 = p * p * p;
+        //    var volume2 = r * r * r;
+
+        //    var total;
+        //    total = volume1 + volume2;
+        //   return total;
+        // }
+
+        //akhirnya
+        function VolumekeduaKubus2(p, r) {
+            return (p * p * p) + (r * r * r);
+        }
+        console.log(VolumekeduaKubus2(3, 4));
+        //==========================================================================================================
     </script>
 
 </body>
