@@ -118,6 +118,24 @@
         }
         tes(2);//print local scope
         console.log(a);//print global scope
+        //==========================================================================================================
+        //Rekursif (fungsi yang memanggil dirinya sendiri)
+        //==========================================================================================================
+        //rekursif harus memiliki kondisi berhenti atau base case
+        function hitungmundur(n) {
+            if (n === 0) {
+                return;
+            }
+            console.log(n);
+            hitungmundur(n - 1);
+        }
+        hitungmundur(10);
+        //faktorial
+        function faktorial(n) {
+            if (n === 0) return 1; {
+                return n * faktorial(n - 1);
+            }
+
     </script>
 
 </body>
