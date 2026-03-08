@@ -9,9 +9,37 @@
 
 <body>
     <script>
-        console.log("Hello, World!");
-        document.write("Mawar");
-
+        //print
+        console.log("Hello, World!");//print di colsole jadi gak akan tertampil di halaman web
+        document.write("Mawar <br> ");// gunakan ini jika ingin menampilkan teks di halaman web
+        //variabel
+        let x = "Putri";
+        x = "Dewi"; // bisa terubah nilainya
+        document.write(x);
+        // console
+        alert("Selamat datang di website saya!");
+        //function adalah kunci utama(method,class,module,constuctor)
+        //Built-in function(String)
+        var nama = "Putri Dewi";
+        console.log(nama.charAt(2)); //mengambil karakter pada index ke-5
+        //(Math)
+        var bil = Math.random();
+        console.log(bil);
+        //User-defined function
+        //function declaration
+        function jumlahDuaBilanngan(a, b) {
+            var total;
+            total = a + b;
+            return total;
+        }
+        //function expression
+        var jumlahDuaBilanngan2 = function (a, b) {
+            var total;
+            total = a + b;
+            return total;
+        }
+        alert(jumlahDuaBilanngan(5, 10));
+        alert(jumlahDuaBilanngan2(7, 3));
     </script>
 
 </body>
