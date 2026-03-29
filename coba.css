@@ -1,0 +1,62 @@
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #4caf50;
+}
+
+.row {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 15px 30px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.container {
+  margin: 40px;
+  display: flex; /* Aktifkan baris sejajar */
+  flex-wrap: wrap; /* Agar kalau layar sempit, card otomatis turun */
+  gap: 20px; /* Memberi jarak antar card tanpa ribet margin */
+  justify-content: center; /* Opsional: supaya card di tengah halaman */
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  background-color: beige;
+}
+.grid {
+  margin: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+.item img {
+  border: 1px solid #333;
+  width: 100%; /* Gambar akan selebar kontainer (misal 200px) */
+  height: auto; /* Tinggi otomatis menyesuaikan agar tidak gepeng */
+}
+.row .col {
+  flex: 1 1 200px; /* Setiap item minimal 200px, tapi bisa melebar */
+  text-align: center;
+}
